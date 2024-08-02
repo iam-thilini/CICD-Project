@@ -37,7 +37,7 @@ pipeline {
     stage('Static Code Analysis') {
       environment {
         // URL of the SonarQube server
-        SONAR_URL = "http://:9000"   //54.221.76.9
+        SONAR_URL = "http://54.221.76.9:9000"   
       }
       steps {
         // Inject the SonarQube authentication token from Jenkins credentials
